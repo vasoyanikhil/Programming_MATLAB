@@ -1,0 +1,12 @@
+clc;
+clear all;	
+xn = [1,1,1];		
+N = 50;		     
+Xk = dft1(xn,N);
+magXk = abs (Xk);
+angXk = angle (Xk);
+k = 0:N-1;
+subplot (2,1,1); stem(k,magXk);
+xlabel ('k'); ylabel('|x(k)|');
+subplot (2,1,2); stem(k,angXk);
+xlabel ('k'); ylabel ('ang (x(k))');

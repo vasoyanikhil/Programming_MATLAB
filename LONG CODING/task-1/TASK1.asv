@@ -1,0 +1,6 @@
+clc;
+close all;
+clear;
+x=imread('cameraman.tif');
+imwrite(y,'cameraman.tif');
+imshow(y)

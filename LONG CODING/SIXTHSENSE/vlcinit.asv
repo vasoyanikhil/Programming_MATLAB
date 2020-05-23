@@ -1,0 +1,16 @@
+clc;
+clear all;
+echo on
+fig1=figure;
+
+vlc=actxcontrol('VideoLAN.VLCPlugin.2',[50 50 700 500],fig1);
+
+disp(vlc.versionInfo());
+
+vlc.BaseURL = 'file://d:/pkp.mp3';  %%%%write ur file location over here
+
+vlc.playlist.add('d:/1.mp4');     %%%%write ur file location over here
+
+vlc.playlist.items.get;
+pause
+vlc.playlist.play();

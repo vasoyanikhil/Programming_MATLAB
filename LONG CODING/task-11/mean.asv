@@ -1,0 +1,16 @@
+clc;
+close all;
+clear;
+
+x=imread('c');
+subplot(1,4,1);
+imshow(x);
+title('simple image');
+
+
+z = imnoise(x,'salt & pepper',0.05);
+y= ordfilt2(z,2,true(5));
+subplot(1,4,2);
+imshow(y);
+title('min image')
+ 

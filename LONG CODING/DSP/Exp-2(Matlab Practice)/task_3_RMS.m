@@ -1,0 +1,12 @@
+clc;
+clear;
+T=10;
+f=1;
+t=-10:0.1:10;
+x=2*sin(2*pi*f*t);
+plot(t,x);
+figure(2);
+y=fft(x);
+plot(abs(y));
+%RMS1=sqrt(sum(x.^2)/length(x))
+%RMS2=max(x)/sqrt(2)

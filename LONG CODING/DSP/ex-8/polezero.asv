@@ -1,0 +1,6 @@
+clc;
+close all;
+clear;
+a=2;
+exp=ztrans(a^n);
+[z p k]=tf2

@@ -1,0 +1,13 @@
+clc;
+close all;
+clear;
+%a=2;
+syms n z w0;
+step=ztrans(n/n);
+ramp=ztrans(n);
+exp=ztrans(a^n);
+c=ztrans(cos (w0*n));
+s=ztrans(sin (w0*n));
+expc=ztrans(a^n * cos(w0*n));
+exps=ztrans(a^n * sin(w0*n));
+a=z/(z-1);

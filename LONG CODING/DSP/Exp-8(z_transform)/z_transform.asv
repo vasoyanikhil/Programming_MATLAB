@@ -1,0 +1,52 @@
+clc;
+clear;
+syms 'f' 'n' 'a' 'w0';
+
+display('Z-Transform of unit step signal');
+f=n/n;
+step_z=ztrans(f)
+
+display('Z-Transform of ramp signal');
+f=n;
+ramp_z=ztrans(f)
+
+display('Z-Transform of exponential signal');
+f=a^n;
+exp_z=ztrans(f)
+
+display('Z-Transform of cosw0n signal');
+f=cos(n*w0);
+cos_z=ztrans(f)
+
+display('Z-Transform of sinw0n signal');
+f=sin(n*w0);
+sin_z=ztrans(f)
+
+display('Z-Transform of a^n *sinw0n signal');
+f=(a^n) * sin(n*w0);
+expsin_z=ztrans(f)
+
+display('Z-Transform of a^n *cosw0n signal');
+f=(a^n) * cos(n*w0);
+expcos_z=ztrans(f)
+
+
+display('Inverse Z-Transform of unit step signal');
+iztrans(step_z)
+
+display('Inverse Z-Transform of  signal');
+iztrans(step_z)
+
+display('Inverse Z-Transform of unit step signal');
+iztrans(step_z)
+
+display('Inverse Z-Transform of unit step signal');
+iztrans(step_z)
+
+display('Inverse Z-Transform of unit step signal');
+iztrans(step_z)
+
+display('Inverse Z-Transform of unit step signal');
+iztrans(step_z)
+
+

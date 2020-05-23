@@ -1,0 +1,12 @@
+clc;
+close all;
+clear;
+w=pi:0.01:pi;
+b=[1];
+a=[1 -0.9];
+x=freqz(b,a,w);
+mag=abs(x);
+subplot(2,1,1);
+plot(mag);
+phase=angle(x);
+s

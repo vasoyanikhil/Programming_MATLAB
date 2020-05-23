@@ -1,0 +1,12 @@
+clc;
+clear;
+close all;
+t = .01;
+Fc = 10000; Fs = 80000;                      % Sampling rate is 80000 samples per second and
+t = [0:1/Fs:0.01]';                 	     % Sampling times for 0.01 second
+s = sin(2*pi*300*t);% +2*sin(2*pi*600*t); 
+subplot(3,1,1);
+plot(t,s)                                	 % Original signal
+xlabel('time');
+ylabel('amplitude');
+title('original signal');

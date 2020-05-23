@@ -1,0 +1,41 @@
+clc;
+close all;
+clear;
+x=imread('peppers.png');
+subplot(1,4,1);
+imshow(x);
+title('colour image');
+
+y=rgb2gray(x);
+subplot(1,4,2);
+imshow(y);
+title('gray image');
+
+z=im2bw(x);
+subplot(1,4,3);
+imshow(z);
+title('binary image');
+
+find (y<50)
+c=0;
+
+find(50<y>150)
+      for i=1:256
+        for j=1:256
+            w(i,j)=1;
+        end
+      end 
+
+find(150<y>255)
+    for i=1:256
+        for j=1:256
+            w(i,j)=y(i,j);
+        end
+    end 
+ 
+  subplot(1,4,4);
+  imshow(w);
+  title('intensity gray image');
+     
+          
+

@@ -1,0 +1,19 @@
+clc;
+clear;
+[x,fs] = wavread('i can do.wav');
+
+plot(x)
+xlabel('Sample Number')
+ylabel('Amplitude')
+title('{\bf Blue Whale Call}')
+
+%soundsc(x,fs)
+bCall = x;%(2.45e4:3.10e4);
+tb = 10*(0:1/fs:(length(bCall)-1)/fs); % Time base
+figure(2)
+plot(tb,bCall)
+xlim([0 tb(end)])
+xlabel('Time (seconds)')
+ylabel('Amplitude')
+title('{\bf Blue Whale B Call}')
+
